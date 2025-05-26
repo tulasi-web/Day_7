@@ -1,0 +1,229 @@
+			x=10
+			y=20
+			z=40
+			a=5
+			
+			x<a and y>z and a<=y and z>=x
+			y>x and z<a and a>=z and z>=y
+			x<a and y>z and a<=y and z>=x
+			x==y and z>=a and y<=z and z!=y
+			y!=5 and z!=0b101000 and x==0b1010 and a>=0b1010 
+
+stmt_1  and    stmt_2       output    stmt_3    and     stmt_4        output    stmt_1_2   &     stmt_3_4   output
+
+ f       &      F            F         t         &       t              t         f                 T         False 
+
+
+
+T        &      f            f          f        &       T              F         F         &      F          F 
+
+
+F        &     F             F           F    &          T               F         F         &     F          F 
+
+f        &   T               F            T      &       T                T         F         &     T         f 
+
+T        &     F              f           t       &       f                f        f         &      f        f
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input:-2
+			x=10
+			y=20
+			z=40
+			a=5
+			
+			((x<a and y>z) and a<=y) or z>=x
+			(y>x or z<a) and (a>=z or z>=y)
+			x<a and (y>z or a<=y) and z>=x
+			x==y or (z>=a and y<=z and z!=y)
+			(y!=5 and z!=0b101000) or (x==0b1010 and a>=0b101
+
+
+
+
+((stmt_1  and    stmt_2  )     output    stmt_3 )    and     stmt_4        output    stmt_1_2 _stamt-3  or  stmt-4   output
+
+
+1. (F        &       F            F            t )         &      T            T           F                       T      T
+
+
+2.  (stmt_1  or stmt_2 )        output     &    ( stmt_3    or       stmt_4   )     output           stmt1_2     &  stmt_3_4    output
+
+       T          F               T         &      F         OR        T             T                 T         &   T           T 
+
+
+
+3.stmt_1      and ( stmt_2      or   stmt_3   )        &             stmt_4 
+
+
+    F          &   (F           or       T      )       &             T
+
+F               &     T                                 &             T
+
+ output is False
+
+
+
+4. stmt_1      or      ( stmt_2   and    stmt_3       &       stmt_4)
+
+
+A.   F         or      ( T     &             T         &       t)
+
+     F          or          T
+
+
+Output is   True 
+
+
+5. ( stmt_1   &    stmt_2  )    or          ( stmt_3   and stmt_4    )
+
+
+    (T       &     F       )     OR         (T      &        t)
+
+
+      F                   or        T
+
+output is T 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input:-3
+			x=10
+			y=20
+			z=40
+			a=5
+			
+			not((x<a and y>z) and a<=y) or z>=x
+			not (y>x or z<a) and (a>=z or z>=y)
+			not x<a and (y>z or a<=y) and z>=x
+			not x==y or (z>=a and y<=z and z!=y)
+			not (y!=5 and z!=0b101000) or (x==0b1010 and a>=0b1010)
+
+
+
+
+
+1. 
+
+
+
+ not ((stmt_1    and stmt_2)   and stmt_3  )  or   stmt_4
+
+not((F  and  F)   and    T)   or     T
+
+T   or    T 
+
+
+out put is    True 
+
+
+
+
+2. not (stmt_1 or stmt_2) and (stmt_3 or stmt_4)
+
+
+not  (T or F)         and (F or T)
+
+not (T)       and T 
+
+output is False 
+
+
+
+
+
+
+3. not stmt_1 and (stmt_2 or stmt_3) and stmt_4
+
+
+not F        and (F or T) and T
+
+T & T &T
+
+out put is T
+
+
+4.
+not stmt_1 or (stmt_2 and stmt_3 and stmt_4)
+
+
+not F   or (T  &  T   &   T )
+
+T or T 
+
+out put is T
+
+
+
+
+5. not (stmt_1 and tmt_2) or (tmt_3  and tmt_4)
+
+not (T & F ) or (T and F)
+
+Output is  True 
+
+
+
+
+
+
+
+
+
+input:-4
+			x=10
+			y=20
+			z=40
+			a=5
+			
+			not x<a and y>z and a<=y and z>=x
+			not y>x and z<a and a>=z and z>=y
+			not x<a and y>z and a<=y and z>=x
+			not x==y and z>=a and y<=z and z!=y
+			not y!=5 and z!=0b101000 and x==0b1010 and a>=0b1010
+
+
+
+
+1.  not stmt_1 and stmt_2 and stmt_3 and z>=stmt_4
+
+
+not F  and F    and T   and T 
+
+output True 
+
+
+
+2.not y>x and z<a and a>=z and z>=y
+ 
+
+
+
+
+
+
+
